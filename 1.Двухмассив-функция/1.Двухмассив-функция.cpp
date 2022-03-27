@@ -8,7 +8,7 @@ const int Youchu = 4;
 const int Xox = 5;
 int Andr[Youchu][Xox];
 double sum = 0;
-void SetMaxelement() 
+void ShowMaxelement() 
 {
 
 	for (int y = 0; y < Youchu; y++)
@@ -24,7 +24,7 @@ void SetMaxelement()
 			max << endl;
 	}
 }
-void SetSumelement() {
+void ShowSumelement() {
 	for (int y = 0; y < Youchu; y++)
 	{
 		for (int x = 0; x < Xox; x++)
@@ -35,7 +35,7 @@ void SetSumelement() {
 		cout << "Summa=" << sum << endl;
 	}
 }
-void SetMinelement() {
+void ShowMinelement() {
 	int min = Andr[0][0];
 
 	for (int y = 0; y < Youchu; y++)
@@ -63,9 +63,9 @@ int main()
 		}
 		cout << endl;
 	}
-	SetMaxelement();
-	SetSumelement();
-	SetMinelement();
+	ShowMaxelement();
+	ShowSumelement();
+	ShowMinelement();
 	return 0;
 }
 
